@@ -1,4 +1,5 @@
 package fruits;
 
-public class Fruit {
+abstract public class Fruit {
+    public abstract float getFruitWeight();
 }
