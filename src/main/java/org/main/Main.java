@@ -5,12 +5,12 @@ import fruits.Orange;
 
 public class Main {
     public static void main(String[] args) {
-        Box appleBox = new Box();
+        Box <Apple> appleBox = new Box<Apple>();
         appleBox.addFruit(new Apple());
         appleBox.addFruit(new Apple());
         System.out.println("Коробка яблок 1: " + appleBox.getWeight());
 
-        Box appleBox2 = new Box();
+        Box <Apple> appleBox2 = new Box<Apple>();
         appleBox2.addFruit(new Apple());
         appleBox2.addFruit(new Apple());
         appleBox2.addFruit(new Apple());
@@ -21,7 +21,7 @@ public class Main {
         System.out.println("Новая Коробка яблок 1: " + appleBox.getWeight());
         System.out.println("Новая Коробка яблок 2: " + appleBox2.getWeight());
 
-        Box orangeBox = new Box();
+        Box <Orange> orangeBox = new Box<Orange>();
         orangeBox.addFruit(new Orange());
         orangeBox.addFruit(new Orange());
         System.out.println("Коробка апельсинов 1: " + orangeBox.getWeight());
